@@ -1,17 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-body{
+
+body {
     font-family: Nunito;
 }
-.env{
+
+.env {
     width: 100%;
     height: 100vh;
-   background-color: #DDDDDD;
-   display: flex; 
-   justify-content: center;
-   align-items: center;
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.box{
+.box {
     width: 70%;
     height: 85%;
     background-color: #FEFEFE;
@@ -20,17 +22,17 @@ body{
 
 }
 
-.con{
+.con {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,58 +41,94 @@ form{
     height: 100%;
 }
 
-.con:nth-child(1){
+.con:nth-child(1) {
     background-color: #377EF4;
     color: #FFFFFF;
 }
 
-.com{
+.com {
     margin: 0rem 1rem 0rem 1rem;
 }
 
-.img{
+.img {
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img{
-    width: 30%;
-    height: 100%;
+img {
+    width: 30px;
+    height: 30px;
     border-radius: 100rem;
 
 }
 
- input{
+input {
     width: 80%;
     padding: 0.7rem 0.7rem 0.7rem 0.7rem;
     margin: 0.7rem 0.7rem 0.7rem 0.7rem;
     border-radius: 0.3rem;
     background-color: #DDDDDD;
     border: none;
+    /* animation: form 3s linear infinite; */
 
- }
+}
 
- .con:nth-child(2){
+@keyframes form {
+    0% {
+        padding: 0.7rem;
+    }
+
+    50% {
+        padding: 2rem;
+    }
+
+    100% {
+        padding: 1rem;
+    }
+}
+
+.con:nth-child(2) {
     background-color: #FFFFFF;
- }
- 
- .bt1{
+}
+
+.bt1 {
     color: #fff;
-    background-color: #2464EC; 
+    background-color: #2464EC;
     border-radius: 2rem;
 }
 
-.bt1:hover{
+.bt1:hover {
     background-color: #000;
 }
 
-.bt2{
+.bt2 {
     color: #fff;
     background-color: #2464EC;
+    animation: button 0.5s;
 }
 
-.bt2:hover{
+@keyframes button {
+    0% {
+        background-color: red;
+        margin-left: -2rem;
+        transform: rotateY(180deg);
+
+    }
+
+    100% {
+        background-color: yellow;
+        margin-left: 0rem;
+    }
+}
+
+.bt2:hover {
     background-color: #000;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    border: 2px solid red;
 }
