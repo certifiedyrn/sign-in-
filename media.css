@@ -1,0 +1,21 @@
+
+/* for mobile phone */
+@media screen and (max-width:750px) {
+    .con:nth-child(1){
+        display: none;
+    }
+
+    .con:nth-child(2){
+        width: 100%;
+    }
+
+    .box{
+        width: 100%;
+    }
+}
+
+/* for ipad */
+@media (min-width:750px) and (max-width:1024px) {
+    
+}
+
